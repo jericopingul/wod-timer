@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
 
-    <TextView
-        android:text="@string/stopwatch_start_time"
-        android:layout_width="398dp"
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:layout_marginTop="100dp"
-        android:textSize="36sp"
-        android:textAlignment="center"
+        android:textSize="100sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
         android:textStyle="normal|bold" />
-</LinearLayout>
+
+    <Button
+        android:text="@string/start_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:onClick="startButton"
+        android:layout_marginTop="40dp"
+        android:textSize="14sp"
+        android:layout_below="@+id/chronometer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp" />
+
+    <Button
+        android:text="@string/stop_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_button"
+        android:onClick="stopButton"
+        android:textSize="14sp"
+        android:layout_marginRight="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

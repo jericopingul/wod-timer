@@ -6,5 +6,7 @@
     <string name="emom_label">EMOM</string>
     <string name="exmom_label">E#MOM</string>
 
-    <string name="stopwatch_start_time">00:00:00</string>
+    <string name="stopwatch_start_time">00:00</string>
+    <string name="start_label">Start</string>
+    <string name="stop_label">Stop</string>
 </resources>
