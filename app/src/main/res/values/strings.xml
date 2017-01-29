@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WOD Timer</string>
+    <string name="stopwatch_label">Stopwatch</string>
+    <string name="amrap_label">AMRAP</string>
+    <string name="tabata_label">Tabata</string>
+    <string name="emom_label">EMOM</string>
+    <string name="exmom_label">E#MOM</string>
+
+    <string name="stopwatch_start_time">00:00:00</string>
+</resources>
